@@ -62,7 +62,7 @@ header {
 }
 
 nav {
-  max-width: 1200px;
+  max-width: 1400px;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -243,10 +243,12 @@ button {
   position: absolute;
   inset: 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom right,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.1) 50%,
-      rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.75)
+  );
 }
 
 .range-card img {

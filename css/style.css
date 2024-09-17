@@ -40,7 +40,7 @@ body {
   background-attachment: fixed;
 }
 
-header {
+#header {
   position: sticky;
   padding-block: 25px;
   top: 0;
@@ -59,6 +59,7 @@ header {
   font-weight: 500;
   color: var(--white);
   cursor: pointer;
+  background-color: transparent;
 }
 
 nav {
@@ -96,7 +97,9 @@ li a:hover {
   transition: 0.3s;
 }
 
-button {
+.main-button,
+.location-button,
+.primary-button {
   font-size: 16px;
   color: var(--text-dark);
   background-color: var(--primary-color);
@@ -121,6 +124,7 @@ button {
   max-width: 750px;
   font-family: "Syncopate";
   letter-spacing: -4px;
+  text-transform: uppercase;
 }
 
 .form-search {
@@ -136,20 +140,20 @@ button {
   box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.1);
 }
 
-.inp-group {
+.input-group {
   display: flex;
   flex-direction: column;
   font-family: "Poppins";
 }
 
-.inp-group label {
+.input-group label {
   text-align: start;
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--text-dark);
 }
 
-.inp-group input {
+.input-group input {
   padding-top: 10px;
   font-size: 1.1rem;
   font-weight: 500;
@@ -157,20 +161,20 @@ button {
   color: var(--text-light);
 }
 
-.btn {
+.primary-button {
   background-color: var(--text-dark);
   padding: 15px 17px;
   font-size: 26px;
   color: var(--white);
 }
 
-.btn:hover i,
-.location-btn:hover {
+.primary-button:hover i,
+.location-button:hover {
   color: var(--text-dark);
 }
 
-.btn:hover,
-.location-btn:hover {
+.primary-button:hover,
+.location-button:hover {
   background-color: var(--primary-color);
   transition: 0.5s;
 }
@@ -193,7 +197,7 @@ button {
   z-index: -1;
 }
 
-.scroll {
+.scroll-down {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -208,7 +212,7 @@ button {
 .vehicles,
 .location-rent,
 .stories,
-.download {
+.download-app {
   padding: 6.5rem 10rem;
   background-color: var(--white);
 }
@@ -228,6 +232,7 @@ button {
   max-width: 700px;
   margin-inline: auto;
   padding-block-end: 4rem;
+  text-transform: uppercase;
 }
 
 .range-card {
@@ -309,6 +314,7 @@ button {
   letter-spacing: -4px;
   padding-block-end: 1.5rem;
   max-width: 600px;
+  text-transform: uppercase;
 }
 
 .location-detailes p {
@@ -326,7 +332,7 @@ button {
   padding-inline: 1rem;
 }
 
-.location-btn {
+.location-button {
   color: var(--white);
   background-color: var(--text-dark);
 }
@@ -377,14 +383,14 @@ button {
   width: 100%;
 }
 
-.banner {
+.carousel {
   padding-block: 4rem;
   background-color: var(--white);
   overflow: hidden;
   width: 100%;
 }
 
-.banner-container {
+.carousel-container {
   display: flex;
   width: max-content;
   gap: 8rem;
@@ -398,12 +404,12 @@ button {
   }
 }
 
-.banner-container img {
+.carousel-container img {
   height: 100px;
   object-fit: contain;
 }
 
-.download {
+.download-app {
   position: relative;
   z-index: 1;
 }
@@ -451,7 +457,7 @@ button {
   isolation: isolate;
 }
 
-.download::before {
+.download-app::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -462,19 +468,19 @@ button {
   z-index: -1;
 }
 
-.news,
+.newsletter,
 footer {
   padding: 3rem 10rem;
   background-color: var(--text-dark);
 }
 
-.news-container {
+.newsletter-container {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.news-container h2 {
+.newsletter-container h2 {
   font-size: 2.5rem;
   font-weight: 600;
   font-family: "Syncopate", sans-serif;
@@ -486,7 +492,7 @@ footer {
   width: 100%;
 }
 
-.news-container form {
+.newsletter-container form {
   display: flex;
   margin-inline-start: 8rem;
   max-width: 450px;
@@ -495,7 +501,7 @@ footer {
   align-items: center;
 }
 
-.news-container input {
+.newsletter-container input {
   border: none;
   background-color: transparent;
   border-bottom: 2px solid var(--text-light);
@@ -506,6 +512,17 @@ footer {
   text-transform: none;
 }
 
+.newsletter-container i {
+  transform: rotate(-45deg);
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.newsletter-container i:hover {
+  color: var(--text-dark);
+  transition: 0.4s;
+}
+
 footer .footer-detailes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -514,17 +531,6 @@ footer .footer-detailes {
 .footer-col:not(:last-child) a {
   display: flex;
   flex-direction: column;
-}
-
-.news-container i {
-  transform: rotate(-45deg);
-  font-size: 1.4rem;
-  color: var(--white);
-}
-
-.news-container i:hover {
-  color: var(--text-dark);
-  transition: 0.4s;
 }
 
 .footer-detailes {
@@ -602,7 +608,7 @@ footer .footer-detailes {
   .vehicles,
   .location-rent,
   .stories,
-  .download {
+  .download-app {
     padding-inline: 5rem;
   }
 
@@ -632,7 +638,7 @@ footer .footer-detailes {
   .vehicles,
   .location-rent,
   .stories,
-  .download {
+  .download-app {
     padding-inline: 1.5rem;
   }
 
@@ -665,7 +671,7 @@ footer .footer-detailes {
   .vehicles,
   .location-rent,
   .stories,
-  .download {
+  .download-app {
     padding-inline: 1rem;
   }
 
@@ -729,12 +735,12 @@ footer .footer-detailes {
 }
 
 @media (max-width: 768px) {
-  header {
+  #header {
     padding-block: 15px;
     background-color: var(--primary-color);
   }
 
-  .btn-header {
+  .main-button {
     display: none;
   }
 
@@ -752,7 +758,7 @@ footer .footer-detailes {
     color: var(--white);
   }
 
-  .dropdown {
+  .nav-links {
     max-height: 0;
     padding-block: 0;
     position: absolute;
@@ -792,7 +798,7 @@ footer .footer-detailes {
     padding: 0.5rem;
   }
 
-  .btn {
+  .primary-button {
     padding: 15px;
     margin: 5px;
     font-size: 24px;
@@ -902,11 +908,11 @@ footer .footer-detailes {
     max-width: 100%;
   }
 
-  .banner-container img {
+  .carousel-container img {
     height: 80px;
   }
 
-  .banner {
+  .carousel {
     padding-block: 3rem;
   }
 
@@ -916,7 +922,7 @@ footer .footer-detailes {
 }
 
 @media (max-width: 375px) {
-  header {
+  #header {
     padding-block: 15px;
   }
 

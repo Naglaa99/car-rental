@@ -7,16 +7,16 @@ function stickyHeader() {
   } else header.classList.remove("sticky");
 }
 const toggleMenu = document.getElementById("toggle-menu");
-const dropDown = document.querySelector(".dropdown");
-const navLink = document.querySelectorAll(".dropdown li a");
+const navLinks = document.querySelector(".nav-links");
+const navLink = document.querySelectorAll(".nav-links li a");
 const icon = toggleMenu.querySelector("i");
 toggleMenu.addEventListener("click", () => {
-  dropDown.classList.toggle("active");
+  navLinks.classList.toggle("active");
   icon.classList.toggle("bx-x");
 });
 navLink.forEach((link) => {
   link.addEventListener("click", () => {
-    dropDown.classList.remove("active");
+    navLinks.classList.remove("active");
     icon.classList.remove("bx-x");
   });
 });

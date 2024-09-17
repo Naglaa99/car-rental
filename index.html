@@ -8,49 +8,41 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
   </head>
 
   <body>
     <header id="header">
       <nav>
         <a href="#" class="logo">rental</a>
-        <!-- FIX: dropdown => nav-links -->
-        <ul class="dropdown">
+        <ul class="nav-links">
           <li><a href="#">home</a></li>
           <li><a href="#rent">rent</a></li>
           <li><a href="#ride">ride</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
-        <button type="button" class="btn-header">get started</button>
-        <!-- FIX: div => button -->
-        <div id="toggle-menu"><i class="bx bx-menu"></i></div>
+        <button type="button" class="main-button">get started</button>
+        <button id="toggle-menu"><i class="bx bx-menu"></i></button>
       </nav>
     </header>
     <main>
       <section class="hero-section">
         <div class="location-hero">
-          <!-- FIX: use CSS to make it uppercase -->
-          <h1>PREMIUM CAR RENTAL</h1>
-
+          <h1>premium car rental</h1>
           <form action="#" class="form-search">
-            <!-- FIX: inp-group => input-group -->
-            <div class="inp-group">
+            <div class="input-group">
               <label for="location">Pick up & Return location</label>
-              <!-- FIX: Every input must have a name -->
               <input type="text" id="location" placeholder="Dallas, Texas" />
             </div>
-            <div class="inp-group">
+            <div class="input-group">
               <label for="start">start</label>
               <input type="text" id="start" placeholder="Aug 16, 10:00 AM" />
             </div>
-            <div class="inp-group">
+            <div class="input-group">
               <label for="stop">stop</label>
               <input type="text" id="stop" placeholder="Aug 18, 10:00 PM" />
             </div>
-            <!-- FIX: btn => meaningful name = main-button | primary-button -->
-            <button class="btn" type="submit">
+            <button class="primary-button" type="submit">
               <i class="bx bx-search search-icon"></i>
             </button>
           </form>
@@ -58,14 +50,12 @@
           <img src="./assets/images/header.png" alt="renal car" />
         </div>
 
-        <!-- FIX: scroll => meaningful name -->
-        <a href="#about-range" class="scroll">
+        <a href="#about-range" class="scroll-down">
           <i class="bx bx-down-arrow-alt"></i>
         </a>
       </section>
 
       <section class="vehicles" id="about-range">
-        <!-- FIX: use CSS to make it uppercase -->
         <h2>WIDE RANGE OF VEHICLES</h2>
 
         <div class="range-vehicles">
@@ -104,7 +94,6 @@
 
       <section class="location-rent">
         <div class="location-detailes">
-          <!-- FIX: use CSS to make it uppercase -->
           <h2>FIND CAR IN YOUR LOCATIONS</h2>
           <p>
             Discover the perfect vehicle tailored to your needs, wherever you
@@ -115,7 +104,7 @@
             car for your journey. Simply enter your location, and let us connect
             you with top-tier vehicles ready for rental.
           </p>
-          <button type="button" class="location-btn">Find a Location</button>
+          <button type="button" class="location-button">Find a Location</button>
         </div>
         <div class="location-image">
           <img src="./assets/images/location.png" alt="location" />
@@ -123,7 +112,6 @@
       </section>
 
       <section class="stories">
-        <!-- FIX: use CSS to make it uppercase -->
         <h2>STORIES BEHIND THE WHEEL</h2>
         <div class="stories-wheel">
           <div class="story-card">
@@ -174,9 +162,8 @@
         </div>
       </section>
 
-      <!-- FIX: banner => carousel -->
-      <section class="banner">
-        <div class="banner-container">
+      <section class="carousel">
+        <div class="carousel-container">
           <img src="./assets/images/banner-1.png" alt="banner" />
           <img src="./assets/images/banner-2.png" alt="banner" />
           <img src="./assets/images/banner-3.png" alt="banner" />
@@ -190,8 +177,7 @@
         </div>
       </section>
 
-      <!-- FIX: download => download-app -->
-      <section class="download">
+      <section class="download-app">
         <div class="download-card">
           <div class="download-detailes">
             <h2>PREMIUM CAR RENTAL</h2>
@@ -210,18 +196,16 @@
         </div>
       </section>
 
-      <!-- FIX: news => newsletter -->
-      <section class="news">
-        <div class="news-container">
+      <section class="newsletter">
+        <div class="newsletter-container">
           <h2>Stay up to date on all the latest news.</h2>
           <form action="#">
             <input
               type="text"
               id="newsletter-email"
               name="newsletter-email"
-              placeholder="Your email"
-            />
-            <button type="submit">
+              placeholder="Your email" />
+            <button type="submit" class="main-button">
               <i class="bx bxs-send"></i>
             </button>
           </form>

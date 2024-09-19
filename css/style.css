@@ -161,12 +161,14 @@ li a:hover {
 }
 
 .primary-button:hover i,
-.location-button:hover {
+.location-button:hover,
+.view-button:hover {
   color: var(--text-dark);
 }
 
 .primary-button:hover,
-.location-button:hover {
+.location-button:hover,
+.view-button:hover {
   background-color: var(--primary-color);
   transition: 0.5s;
 }
@@ -214,7 +216,8 @@ li a:hover {
 }
 
 .vehicles h2,
-.stories h2 {
+.stories h2,
+.select-container h2 {
   font-size: 3.5rem;
   text-align: center;
   font-family: "Syncopate";
@@ -237,10 +240,12 @@ li a:hover {
   position: absolute;
   inset: 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom right,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.1) 50%,
-      rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.75)
+  );
 }
 
 .range-card img {
@@ -319,7 +324,8 @@ li a:hover {
   padding-inline: 1rem;
 }
 
-.location-button {
+.location-button,
+.view-button {
   color: var(--white);
   background-color: var(--text-dark);
 }
@@ -402,25 +408,26 @@ li a:hover {
 
 .download-card {
   display: flex;
-  height:50vh;
+  height: 50vh;
   background-color: var(--primary-color);
   border-radius: 1rem;
   align-items: center;
   margin-block-start: 7rem;
   transform: translateY(25%);
 }
+
 .download-details {
   padding: 5rem;
 }
 
 .download-details h2 {
-  max-width:700px;
+  max-width: 700px;
   font-size: 3.3rem;
   font-weight: 600;
   font-family: "Syncopate", sans-serif;
   line-height: 4rem;
   letter-spacing: -5px;
-  padding-bottom:1rem ;
+  padding-bottom: 1rem;
 }
 
 .download-link {
@@ -597,11 +604,130 @@ footer .footer-detailes {
   font-family: "Poppins", sans-serif;
 }
 
+.select-container {
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+  background-image: url("../assets/images/select-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  max-width: 900px;
+  text-align: center;
+  margin-block-start: 2rem;
+}
+
+.select-card img {
+  max-width: 800px;
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.5));
+}
+
+.select-details {
+  max-width: 600px;
+  margin-inline: auto;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.select-card.show-details + .select-details {
+  display: flex;
+}
+
+.select-details-card {
+  text-align: center;
+}
+
+.select-details-card > span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  background-color: var(--white);
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.select-details-card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: "Syncopate", sans-serif;
+  color: var(--text-dark);
+}
+
+.select-details-card h4 span {
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+
+.select-form {
+  max-width: 750px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  background-color: var(--white);
+  flex-wrap: wrap;
+  transform: translateY(50%);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  gap: 5rem;
+}
+
+.select-price {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Syncopate", sans-serif;
+  color: var(--text-light);
+  gap: 2rem;
+}
+
+.select-price span {
+  font-size: 3rem;
+  line-height: 3rem;
+  color: var(--text-dark);
+}
+
+.select-price span:not(#select-price) {
+  font-weight: 400;
+}
+
+.select-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.select-button {
+  min-width: 135px;
+}
+
 /* -----responsive-------- */
 @media (max-width: 1440px) {
-  nav,.section-container,.footer-container{
-    padding-inline:5rem;
+  nav,
+  .section-container,
+  .footer-container {
+    padding-inline: 5rem;
   }
+
   .location-rent {
     gap: 1rem;
   }
@@ -618,12 +744,15 @@ footer .footer-detailes {
   .location-details p {
     padding-block-end: 1.3rem;
   }
- 
 }
+
 @media (max-width: 1200px) {
-  nav,.section-container,.footer-container{
-    padding-inline:2rem;
+  nav,
+  .section-container,
+  .footer-container {
+    padding-inline: 2rem;
   }
+
   .range-vehicles {
     gap: 1.5rem;
   }
@@ -646,9 +775,12 @@ footer .footer-detailes {
 }
 
 @media (max-width: 1024px) {
-  nav,.section-container,.footer-container{
-    padding-inline:1rem;
+  nav,
+  .section-container,
+  .footer-container {
+    padding-inline: 1rem;
   }
+
   .range-vehicles {
     gap: 1rem;
   }
@@ -714,9 +846,11 @@ footer .footer-detailes {
     background-color: var(--primary-color);
     position: relative;
   }
+
   .range-card {
-    max-width:100%;
+    max-width: 100%;
   }
+
   .main-button {
     display: none;
   }
@@ -724,7 +858,6 @@ footer .footer-detailes {
   #toggle-menu {
     display: block;
   }
-
 
   .logo {
     color: var(--white);

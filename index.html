@@ -1,218 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Rental</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-  </head>
 
-  <body>
-    <header id="header">
-      <nav>
-        <a href="#" class="logo">rental</a>
-        <ul class="nav-links">
-          <li><a href="#">home</a></li>
-          <li><a href="#rent">rent</a></li>
-          <li><a href="#ride">ride</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-        <button type="button" class="main-button">get started</button>
-        <button id="toggle-menu"><i class="bx bx-menu"></i></button>
-      </nav>
-    </header>
-    <main>
-      <section class="hero-section">
-        <div class="location-hero">
-          <h1>premium car rental</h1>
-          <form action="#" class="form-search">
-            <div class="input-group">
-              <label for="location">Pick up & Return location</label>
-              <input type="text" id="location" placeholder="Dallas, Texas" />
-            </div>
-            <div class="input-group">
-              <label for="start">start</label>
-              <input type="text" id="start" placeholder="Aug 16, 10:00 AM" />
-            </div>
-            <div class="input-group">
-              <label for="stop">stop</label>
-              <input type="text" id="stop" placeholder="Aug 18, 10:00 PM" />
-            </div>
-            <button class="primary-button" type="submit">
-              <i class="bx bx-search search-icon"></i>
-            </button>
-          </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
 
-          <img src="./assets/images/header.png" alt="renal car" />
+<body>
+  <header id="header">
+    <nav>
+      <a href="#" class="logo">rental</a>
+      <ul class="nav-links">
+        <li><a href="#">home</a></li>
+        <li><a href="#rent">rent</a></li>
+        <li><a href="#ride">ride</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <button type="button" class="main-button">get started</button>
+      <button id="toggle-menu"><i class="bx bx-menu"></i></button>
+    </nav>
+    <div class="location-hero">
+      <h1>premium car rental</h1>
+      <form action="#" class="form-search">
+        <div class="input-group">
+          <label for="location">Pick up & Return location</label>
+          <input type="text" id="location" placeholder="Dallas, Texas" name="location" />
         </div>
-
-        <a href="#about-range" class="scroll-down">
-          <i class="bx bx-down-arrow-alt"></i>
-        </a>
-      </section>
-
-      <section class="vehicles" id="about-range">
-        <h2>WIDE RANGE OF VEHICLES</h2>
-
-        <div class="range-vehicles">
-          <div class="range-card">
-            <img src="./assets/images/range-1.jpg" alt="cars" />
-            <div class="detailes">
-              <h4>cars</h4>
-              <a href=""><i class="bx bx-right-arrow-alt"></i></a>
-            </div>
-          </div>
-          <div class="range-card">
-            <img src="./assets/images/range-2.jpg" alt="suvs" />
-            <div class="detailes">
-              <h4>suvs</h4>
-              <a href="">
-                <i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </div>
-          </div>
-          <div class="range-card">
-            <img src="./assets/images/range-3.jpg" alt="vans" />
-            <div class="detailes">
-              <h4>vans</h4>
-              <a href=""><i class="bx bx-right-arrow-alt"></i></a>
-            </div>
-          </div>
-          <div class="range-card">
-            <img src="./assets/images/range-4.jpg" alt="electric" />
-            <div class="detailes">
-              <h4>electric</h4>
-              <a href=""><i class="bx bx-right-arrow-alt"></i></a>
-            </div>
-          </div>
+        <div class="input-group">
+          <label for="start">start</label>
+          <input type="text" id="start" placeholder="Aug 16, 10:00 AM" name="start" />
         </div>
-      </section>
-
-      <section class="location-rent">
-        <div class="location-detailes">
-          <h2>FIND CAR IN YOUR LOCATIONS</h2>
-          <p>
-            Discover the perfect vehicle tailored to your needs, wherever you
-            are. Our 'Find Car in Your Locations' feature allows you to
-            effortlessly search and select from our premium fleet available near
-            you. Whether you're looking for a luxury sedan, a spacious SUV, or a
-            sporty convertible, our easy-to-use tool ensures you find the ideal
-            car for your journey. Simply enter your location, and let us connect
-            you with top-tier vehicles ready for rental.
-          </p>
-          <button type="button" class="location-button">Find a Location</button>
+        <div class="input-group">
+          <label for="stop">stop</label>
+          <input type="text" id="stop" placeholder="Aug 18, 10:00 PM" name="stop" />
         </div>
-        <div class="location-image">
-          <img src="./assets/images/location.png" alt="location" />
+        <button class="primary-button" type="submit">
+          <i class="bx bx-search search-icon"></i>
+        </button>
+      </form>
+      <img src="./assets/images/header.png" alt="renal car" />
+    </div>
+    <a href="#about-range" class="scroll-down">
+      <i class="bx bx-down-arrow-alt"></i>
+    </a>
+  </header>
+  <section class="section-container  vehicles " id="about-range">
+    <h2>WIDE RANGE OF VEHICLES</h2>
+    <div class="range-vehicles">
+      <div class="range-card">
+        <img src="./assets/images/range-1.jpg" alt="cars" />
+        <div class="details">
+          <h4>cars</h4>
+          <a href=""><i class="bx bx-right-arrow-alt"></i></a>
         </div>
-      </section>
+      </div>
+      <div class="range-card">
+        <img src="./assets/images/range-2.jpg" alt="suvs" />
+        <div class="details">
+          <h4>suvs</h4>
+          <a href="">
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="range-card">
+        <img src="./assets/images/range-3.jpg" alt="vans" />
+        <div class="details">
+          <h4>vans</h4>
+          <a href=""><i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
+      <div class="range-card">
+        <img src="./assets/images/range-4.jpg" alt="electric" />
+        <div class="details">
+          <h4>electric</h4>
+          <a href=""><i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section class="stories">
-        <h2>STORIES BEHIND THE WHEEL</h2>
-        <div class="stories-wheel">
-          <div class="story-card">
-            <div class="story-date">
-              <span>12</span>
-              <div>
-                <p>January</p>
-                <p>2024</p>
-              </div>
-            </div>
-            <h4>Adventures on the Open Road</h4>
-            <p>
-              Join us as we dive into the exhilarating stories of travelers who
-              embarked on unforgettable journeys with PREMIUM CAR RENTAL.
-            </p>
-            <img src="./assets/images/story-1.jpg" alt="story" />
-          </div>
-          <div class="story-card">
-            <div class="story-date">
-              <span>04</span>
-              <div>
-                <p>March</p>
-                <p>2024</p>
-              </div>
-            </div>
-            <h4>Luxury and Comfort: Experiences</h4>
-            <p>
-              In this series, we highlight the luxurious touches, unparalleled
-              comfort, and exceptional service that make every ride.
-            </p>
-            <img src="./assets/images/story-2.jpg" alt="story" />
-          </div>
-          <div class="story-card">
-            <div class="story-date">
-              <span>18</span>
-              <div>
-                <p>june</p>
-                <p>2024</p>
-              </div>
-            </div>
-            <h4>Cars that Adapt to Your Lifestyle</h4>
-            <p>
-              Read about how our versatile vehicles have seamlessly integrated
-              into the lives of professionals and families alike.
-            </p>
-            <img src="./assets/images/story-3.jpg" alt="story" />
+  <section class="section-container location-rent">
+    <div class="location-details">
+      <h2>FIND CAR IN YOUR LOCATIONS</h2>
+      <p>
+        Discover the perfect vehicle tailored to your needs, wherever you
+        are. Our 'Find Car in Your Locations' feature allows you to
+        effortlessly search and select from our premium fleet available near
+        you. Whether you're looking for a luxury sedan, a spacious SUV, or a
+        sporty convertible, our easy-to-use tool ensures you find the ideal
+        car for your journey. Simply enter your location, and let us connect
+        you with top-tier vehicles ready for rental.
+      </p>
+      <button type="button" class="location-button">Find a Location</button>
+    </div>
+    <div class="location-image">
+      <img src="./assets/images/location.png" alt="location" />
+    </div>
+  </section>
+
+  <section class="section-container stories">
+    <h2>STORIES BEHIND THE WHEEL</h2>
+    <div class="stories-wheel">
+      <div class="story-card">
+        <div class="story-date">
+          <span>12</span>
+          <div>
+            <p>January</p>
+            <p>2024</p>
           </div>
         </div>
-      </section>
-
-      <section class="carousel">
-        <div class="carousel-container">
-          <img src="./assets/images/banner-1.png" alt="banner" />
-          <img src="./assets/images/banner-2.png" alt="banner" />
-          <img src="./assets/images/banner-3.png" alt="banner" />
-          <img src="./assets/images/banner-4.png" alt="banner" />
-          <img src="./assets/images/banner-5.png" alt="banner" />
-          <img src="./assets/images/banner-6.png" alt="banner" />
-          <img src="./assets/images/banner-7.png" alt="banner" />
-          <img src="./assets/images/banner-8.png" alt="banner" />
-          <img src="./assets/images/banner-9.png" alt="banner" />
-          <img src="./assets/images/banner-10.png" alt="banner" />
-        </div>
-      </section>
-
-      <section class="download-app">
-        <div class="download-card">
-          <div class="download-detailes">
-            <h2>PREMIUM CAR RENTAL</h2>
-            <div class="download-link">
-              <a href="#">
-                <img src="./assets/images/apple.png" alt="apple link" />
-              </a>
-              <a href="#">
-                <img src="./assets/images/google.png" alt="google link" />
-              </a>
-            </div>
-          </div>
-          <div class="download-image">
-            <img src="./assets/images/download.png" alt="download" />
+        <h4>Adventures on the Open Road</h4>
+        <p>
+          Join us as we dive into the exhilarating stories of travelers who
+          embarked on unforgettable journeys with PREMIUM CAR RENTAL.
+        </p>
+        <img src="./assets/images/story-1.jpg" alt="story" />
+      </div>
+      <div class="story-card">
+        <div class="story-date">
+          <span>04</span>
+          <div>
+            <p>March</p>
+            <p>2024</p>
           </div>
         </div>
-      </section>
-
-      <section class="newsletter">
-        <div class="newsletter-container">
-          <h2>Stay up to date on all the latest news.</h2>
-          <form action="#">
-            <input
-              type="text"
-              id="newsletter-email"
-              name="newsletter-email"
-              placeholder="Your email" />
-            <button type="submit" class="main-button">
-              <i class="bx bxs-send"></i>
-            </button>
-          </form>
+        <h4>Luxury and Comfort: Experiences</h4>
+        <p>
+          In this series, we highlight the luxurious touches, unparalleled
+          comfort, and exceptional service that make every ride.
+        </p>
+        <img src="./assets/images/story-2.jpg" alt="story" />
+      </div>
+      <div class="story-card">
+        <div class="story-date">
+          <span>18</span>
+          <div>
+            <p>june</p>
+            <p>2024</p>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer>
+        <h4>Cars that Adapt to Your Lifestyle</h4>
+        <p>
+          Read about how our versatile vehicles have seamlessly integrated
+          into the lives of professionals and families alike.
+        </p>
+        <img src="./assets/images/story-3.jpg" alt="story" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-container carousel">
+    <div class="carousel-container">
+      <img src="./assets/images/banner-1.png" alt="banner" />
+      <img src="./assets/images/banner-2.png" alt="banner" />
+      <img src="./assets/images/banner-3.png" alt="banner" />
+      <img src="./assets/images/banner-4.png" alt="banner" />
+      <img src="./assets/images/banner-5.png" alt="banner" />
+      <img src="./assets/images/banner-6.png" alt="banner" />
+      <img src="./assets/images/banner-7.png" alt="banner" />
+      <img src="./assets/images/banner-8.png" alt="banner" />
+      <img src="./assets/images/banner-9.png" alt="banner" />
+      <img src="./assets/images/banner-10.png" alt="banner" />
+    </div>
+  </section>
+
+  <section class="download-app">
+    <div class="section-container">
+      <div class="download-card">
+        <div class="download-details">
+          <h2>PREMIUM CAR RENTAL</h2>
+          <div class="download-link">
+            <a href="#">
+              <img src="./assets/images/apple.png" alt="apple link" />
+            </a>
+            <a href="#">
+              <img src="./assets/images/google.png" alt="google link" />
+            </a>
+          </div>
+        </div>
+        <div class="download-image">
+          <img src="./assets/images/download.png" alt="download" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="section-container newsletter-container">
+      <h2>Stay up to date on all the latest news.</h2>
+      <form action="#">
+        <input type="text" id="newsletter-email" name="newsletter-email" placeholder="Your email" />
+        <button type="submit" class="main-button">
+          <i class="bx bxs-send"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+  </main>
+  <footer>
+    <div class="footer-container">
       <div class="footer-detailes">
         <div class="footer-col">
           <h4>Resources</h4>
@@ -252,8 +243,10 @@
       <div class="footer-copyright">
         Copyright © 2024 Naglaa Hamdi. All rights reserved.
       </div>
-    </footer>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./javascript/main.js"></script>
+</body>
 
-    <script src="./javascript/main.js"></script>
-  </body>
 </html>

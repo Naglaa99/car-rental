@@ -528,7 +528,7 @@ footer {
   padding-block-end: 1em;
 }
 
-footer .footer-detailes {
+footer .footer-details {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -538,7 +538,7 @@ footer .footer-detailes {
   flex-direction: column;
 }
 
-.footer-detailes {
+.footer-details {
   padding-inline-start: 1rem;
 }
 
@@ -843,7 +843,7 @@ footer .footer-detailes {
     margin-inline-start: 2rem;
   }
 
-  .footer-detailes {
+  .footer-details {
     padding-inline: 0;
   }
 
@@ -1052,7 +1052,7 @@ footer .footer-detailes {
     font-size: 1.2rem;
   }
 
-  footer .footer-detailes {
+  footer .footer-details {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
@@ -1178,7 +1178,7 @@ footer .footer-detailes {
     width: 68%;
   }
 
-  footer .footer-detailes {
+  footer .footer-details {
     grid-template-columns: repeat(1, 1fr);
   }
 

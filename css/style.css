@@ -77,14 +77,14 @@ nav ul {
   color: var(--text-dark);
 }
 
-li a {
+.nav-links a {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: var(--text-dark);
 }
 
-li a:hover {
+.nav-links a:hover {
   color: var(--primary-color);
   transition: 0.3s;
 }
@@ -240,12 +240,10 @@ li a:hover {
   position: absolute;
   inset: 0;
   padding: 3rem;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.1) 50%,
-    rgba(0, 0, 0, 0.75)
-  );
+  background-image: linear-gradient(to bottom right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.75));
 }
 
 .range-card img {
@@ -642,7 +640,7 @@ footer .footer-details {
   gap: 2rem;
 }
 
-.select-card.show-details + .select-details {
+.select-card.show-details+.select-details {
   display: flex;
 }
 
@@ -650,7 +648,7 @@ footer .footer-details {
   text-align: center;
 }
 
-.select-details-card > span {
+.select-details-card>span {
   display: inline-block;
   margin-bottom: 1rem;
   width: 70px;
@@ -722,6 +720,7 @@ footer .footer-details {
 
 /* -----responsive-------- */
 @media (max-width: 1440px) {
+
   nav,
   .section-container,
   .footer-container {
@@ -759,6 +758,7 @@ footer .footer-details {
 }
 
 @media (max-width: 1200px) {
+
   nav,
   .section-container,
   .footer-container {
@@ -795,6 +795,7 @@ footer .footer-details {
 }
 
 @media (max-width: 1024px) {
+
   nav,
   .section-container,
   .footer-container {
@@ -937,11 +938,11 @@ footer .footer-details {
     z-index: 1;
   }
 
-  li a {
+  .nav-links a {
     color: var(--white);
   }
 
-  li a:hover {
+  .nav-links a:hover {
     color: var(--text-dark);
   }
 
@@ -1006,7 +1007,7 @@ footer .footer-details {
     align-items: center;
     margin-block-start: 0rem;
     padding-block: 2rem;
-    height: 50vh;
+    height: auto;
   }
 
   .download-details {
@@ -1147,6 +1148,7 @@ footer .footer-details {
   .location-hero h1 {
     font-size: 2.8rem;
   }
+
   .swiper-slide {
     margin-block-start: 0rem;
   }
@@ -1163,7 +1165,7 @@ footer .footer-details {
     width: 125px;
   }
 
-  .select-details-card > span {
+  .select-details-card>span {
     width: 50px;
     height: 50px;
     line-height: 50px;
